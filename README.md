@@ -28,3 +28,24 @@ The app shows **current weather**, **upcoming forecasts**, **weather icons**, an
 ---
 
 ## 📂 Project Structure
+
+---
+
+## 🔑 API Used
+
+**OpenWeatherMap**
+
+- Current Weather API  
+- 5 Day / 3 Hour Forecast API (XML format)
+
+👉 https://openweathermap.org/api
+
+> You need a **free API key** to run this project.
+
+---
+
+## ⚙️ Setup & Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/weather-forecast-app.git
