@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* 🌍 Dynamic backgrounds */
+body.default {
+  background: linear-gradient(135deg, #020617, #020617);
+}
+body.cloudy {
+  background: linear-gradient(180deg, #64748b, #1e293b);
+}
+body.rainy {
+  background: linear-gradient(180deg, #334155, #020617);
+}
+body.clear {
+  background: linear-gradient(180deg, #38bdf8, #0ea5e9);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+/* 📦 App container */
+.weather-app {
+  width: 380px;
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.6);
+}
+
+/* 🔍 Search */
+.weather-app input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.weather-app button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* 📊 Forecast area */
+#forecast {
+  margin-top: 18px;
+}
+
+#forecast h2 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* 🧭 Horizontal cards */
+.forecast-wrapper {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.forecast-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+.forecast-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+/* 🧾 Forecast card */
+.forecast-card {
+  min-width: 150px;
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.18);
+  text-align: center;
+}
+
+.forecast-card img {
+  width: 60px;
+}
+
+.forecast-card .date {
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+.forecast-card .temp {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.forecast-card .condition {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+/* ✍ Brand */
+.brand {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+.brand span {
+  font-weight: 700;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  letter-spacing: 1.2px;
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
